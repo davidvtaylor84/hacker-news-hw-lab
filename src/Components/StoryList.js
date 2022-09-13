@@ -2,17 +2,17 @@ import React from "react";
 import NewsListItem from "./NewsListItem";
 
 
-
 const StoryList = ({newsList}) => {
-    const newsHeadlines = newsList.map((newsId, index) =>{
-        return <NewsListItem key={index} newsId ={newsId}/>
-    })
+
+const newItems = newsList.map((item, index) => {
+    return <NewsListItem key={index} item={item}/> 
+})
 
 
 return (
     <div>
         <ul>
-            {newsHeadlines}
+            {newItems}
         </ul>
     </div>
 )

@@ -1,8 +1,8 @@
 import React from "react";
 
-const NewsListItem = ({newsId}) => {
+const NewsListItem = ({item}) => {
     return (
-        <li>{newsId.title}</li>
+        <li>{item.title}</li>
     )
 }
 
